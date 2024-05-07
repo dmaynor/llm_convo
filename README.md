@@ -23,35 +23,35 @@ pip install scikit-learn argparse
    Identify the most common words in your conversation data.
 
    ```bash
-   python3 parse2.py ./conversations.json --common-words --top-n 30
+   python3 parse3.py ./conversations.json --common-words --top-n 30
    ```
 
 2. **Latent Topic Modeling:**
    Identify the topics discussed within the conversation data.
 
    ```bash
-   python3 parse2.py ./conversations.json --topic-modeling --num-topics 5 --top-words 10
+   python3 parse3.py ./conversations.json --topic-modeling --num-topics 5 --top-words 10
    ```
 
 3. **Question Rephrasing Analysis:**
    Identify pairs of similar questions asked in the conversations.
 
    ```bash
-   python3 parse2.py ./conversations.json --rephrasing --similarity-threshold 0.6
+   python3 parse3.py ./conversations.json --rephrasing --similarity-threshold 0.6
    ```
 
 4. **Print Common English Words:**
    Display the top N most common English words.
 
    ```bash
-   python3 parse2.py ./conversations.json --print-english-words 20
+   python3 parse3.py ./conversations.json --print-english-words 20
    ```
 
 5. **Combining Multiple Analyses:**
    Run multiple analyses together.
 
    ```bash
-   python3 parse2.py ./conversations.json --common-words --filter-english-words --top-n 20 --topic-modeling --num-topics 5 --top-words 10
+   python3 parse3.py ./conversations.json --common-words --filter-english-words --top-n 20 --topic-modeling --num-topics 5 --top-words 10
    ```
 
 **Command-Line Arguments:**
@@ -70,6 +70,6 @@ pip install scikit-learn argparse
 ## Example
 
 ```bash
-python3 parse2.py ./conversations.json --common-words --filter-english-words --top-n 30
+python3 parse3.py ./conversations.json --common-words --filter-english-words --top-n 30
 ```
 This command will analyze common words from `conversations.json`, filtering out the top English words, and display the top 30 results.
